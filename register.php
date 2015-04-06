@@ -189,7 +189,10 @@ function validateForm() {
 	    }
 	}
 	$error_message.='</ul></p>';
-	echo $error_message;
+	if ($submissionFailed)
+	{
+		echo $error_message;
+	}
 ?>
 
 <?php endif ?>
